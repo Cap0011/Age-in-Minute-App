@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
     android:background="@color/backgroundColor"
     tools:context=".MainActivity">
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="IN MINUTES &amp; SECONDS"
+        android:text="IN HOURS &amp; MINUTES"
         android:textColor="@color/textColor"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -44,30 +47,79 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="1990/03/26"
         android:textColor="@color/navy"
+        android:background="@color/ivory"
+        android:text="                    "
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
         android:textSize="45sp"
         android:textStyle="bold" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Selected Date"
+        android:text="Your Birthday"
         android:textColor="@color/blue"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:background="@color/ivory"
         android:textSize="25sp"
         android:textStyle="bold"
         />
 
     <TextView
+        android:id="@+id/tvAgeinDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/blue"
+        android:textSize="40sp"
+        android:background="@color/ivory"
+        android:text="                    "
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Age in Days"
+        android:textColor="@color/navy"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvAgeinHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/blue"
+        android:textSize="40sp"
+        android:background="@color/ivory"
+        android:text="                    "
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Age in Hours"
+        android:textColor="@color/navy"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <TextView
         android:id="@+id/tvAgeinMinutes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="dummydummy"
+        android:layout_marginTop="10dp"
         android:textColor="@color/blue"
+        android:background="@color/ivory"
+        android:text="                    "
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:textSize="40sp"
         android:textStyle="bold" />
     <TextView
@@ -78,27 +130,6 @@
         android:textColor="@color/navy"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:background="@color/ivory"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-    <TextView
-        android:id="@+id/tvAgeinSeconds"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="dummydummydummy"
-        android:textColor="@color/blue"
-        android:textSize="35sp"
-        android:textStyle="bold" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Age in Seconds"
-        android:textColor="@color/navy"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:background="@color/ivory"
         android:textSize="25sp"
         android:textStyle="bold" />
 
@@ -106,13 +137,13 @@
         android:id="@+id/btnDatePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="@color/navy"
         android:padding="15dp"
         android:text="SELECT DATE"
         android:textColor="@color/ivory"
         android:textSize="25sp"
         android:textStyle="bold" />
+    </LinearLayout>
 
-
-</LinearLayout>
+</ScrollView>
